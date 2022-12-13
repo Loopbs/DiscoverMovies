@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIUserInterfaceStyle</key>
+	<string>Dark</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -33,10 +35,6 @@
 		<string>$API_AUTH_KEY_YOUTUBE</string>
 		<key>API_TIMEOUT_INTERVAL_FOR_REQUEST</key>
 		<string>$API_TIMEOUT_INTERVAL_FOR_REQUEST</string>
-		<key>BUNDLE_IDENTIFIER</key>
-		<string>$BUNDLE_IDENTIFIER</string>
-		<key>ROOT_STORYBOARD_NAME</key>
-		<string>$ROOT_STORYBOARD_NAME</string>
 	</dict>
 </dict>
 </plist>
