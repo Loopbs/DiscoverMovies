@@ -3,24 +3,72 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5A17A9C9AF085DFF165855B /* libPods-DiscoverMovies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D14EEE2C61F05DA6FD9D86AE /* libPods-DiscoverMovies.a */; };
+		F221AC37294920C300CCCEE5 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC36294920C300CCCEE5 /* Configuration.swift */; };
+		F221AC3A2949215500CCCEE5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC392949215500CCCEE5 /* StringExtensions.swift */; };
+		F221AC41294921AC00CCCEE5 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC40294921AC00CCCEE5 /* CoreDataManager.swift */; };
+		F221AC43294921CA00CCCEE5 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC42294921CA00CCCEE5 /* APICaller.swift */; };
+		F221AC48294921FC00CCCEE5 /* MovieResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC47294921FC00CCCEE5 /* MovieResponseModel.swift */; };
+		F221AC4A2949221000CCCEE5 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC492949221000CCCEE5 /* MovieModel.swift */; };
+		F221AC4C2949222A00CCCEE5 /* YoutubeSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC4B2949222A00CCCEE5 /* YoutubeSearchModel.swift */; };
+		F221AC4E2949223D00CCCEE5 /* YoutubeVideoIdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC4D2949223D00CCCEE5 /* YoutubeVideoIdModel.swift */; };
+		F221AC502949224F00CCCEE5 /* YoutubeVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC4F2949224F00CCCEE5 /* YoutubeVideoModel.swift */; };
+		F221AC532949229300CCCEE5 /* DiscoverMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F221AC512949229300CCCEE5 /* DiscoverMovies.xcdatamodeld */; };
+		F221AC562949234000CCCEE5 /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC552949234000CCCEE5 /* TitlePreviewViewModel.swift */; };
+		F221AC582949234F00CCCEE5 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC572949234F00CCCEE5 /* TitleViewModel.swift */; };
+		F221AC61294923B800CCCEE5 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC60294923B800CCCEE5 /* FavoritesViewController.swift */; };
+		F221AC63294923CD00CCCEE5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC62294923CD00CCCEE5 /* HomeViewController.swift */; };
+		F221AC65294923E900CCCEE5 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC64294923E900CCCEE5 /* MainTabBarViewController.swift */; };
+		F221AC67294923FA00CCCEE5 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC66294923FA00CCCEE5 /* CollectionTableViewCell.swift */; };
+		F221AC692949240E00CCCEE5 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC682949240E00CCCEE5 /* HeroHeaderUIView.swift */; };
+		F221AC6B2949241F00CCCEE5 /* TitleImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC6A2949241F00CCCEE5 /* TitleImageCollectionViewCell.swift */; };
+		F221AC6D2949243E00CCCEE5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC6C2949243E00CCCEE5 /* SearchViewController.swift */; };
+		F221AC6F2949245500CCCEE5 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC6E2949245500CCCEE5 /* SearchResultViewController.swift */; };
+		F221AC712949246900CCCEE5 /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC702949246900CCCEE5 /* TitlePreviewViewController.swift */; };
+		F221AC732949247C00CCCEE5 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC722949247C00CCCEE5 /* UpcomingViewController.swift */; };
+		F221AC752949249200CCCEE5 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC742949249200CCCEE5 /* TitleTableViewCell.swift */; };
+		F221AC77294927BE00CCCEE5 /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC76294927BE00CCCEE5 /* ImageDownloadManager.swift */; };
 		F254DD9029461B8D0048BD8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254DD8F29461B8D0048BD8E /* AppDelegate.swift */; };
 		F254DD9229461B8D0048BD8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254DD9129461B8D0048BD8E /* SceneDelegate.swift */; };
-		F254DD9429461B8D0048BD8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254DD9329461B8D0048BD8E /* ViewController.swift */; };
-		F254DD9729461B8D0048BD8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F254DD9529461B8D0048BD8E /* Main.storyboard */; };
 		F254DD9929461B8F0048BD8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F254DD9829461B8F0048BD8E /* Assets.xcassets */; };
 		F254DD9C29461B8F0048BD8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F254DD9A29461B8F0048BD8E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B31830D2370A0E31B24476D /* Pods-DiscoverMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscoverMovies.debug.xcconfig"; path = "Target Support Files/Pods-DiscoverMovies/Pods-DiscoverMovies.debug.xcconfig"; sourceTree = "<group>"; };
+		CC9D3DA6F7DC91992ADD862C /* Pods-DiscoverMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscoverMovies.release.xcconfig"; path = "Target Support Files/Pods-DiscoverMovies/Pods-DiscoverMovies.release.xcconfig"; sourceTree = "<group>"; };
+		D14EEE2C61F05DA6FD9D86AE /* libPods-DiscoverMovies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DiscoverMovies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F221AC36294920C300CCCEE5 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		F221AC392949215500CCCEE5 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		F221AC40294921AC00CCCEE5 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		F221AC42294921CA00CCCEE5 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		F221AC47294921FC00CCCEE5 /* MovieResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponseModel.swift; sourceTree = "<group>"; };
+		F221AC492949221000CCCEE5 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		F221AC4B2949222A00CCCEE5 /* YoutubeSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchModel.swift; sourceTree = "<group>"; };
+		F221AC4D2949223D00CCCEE5 /* YoutubeVideoIdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoIdModel.swift; sourceTree = "<group>"; };
+		F221AC4F2949224F00CCCEE5 /* YoutubeVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoModel.swift; sourceTree = "<group>"; };
+		F221AC522949229300CCCEE5 /* DiscoverMovies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DiscoverMovies.xcdatamodel; sourceTree = "<group>"; };
+		F221AC552949234000CCCEE5 /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
+		F221AC572949234F00CCCEE5 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
+		F221AC60294923B800CCCEE5 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		F221AC62294923CD00CCCEE5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F221AC64294923E900CCCEE5 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		F221AC66294923FA00CCCEE5 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		F221AC682949240E00CCCEE5 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
+		F221AC6A2949241F00CCCEE5 /* TitleImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		F221AC6C2949243E00CCCEE5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F221AC6E2949245500CCCEE5 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		F221AC702949246900CCCEE5 /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
+		F221AC722949247C00CCCEE5 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		F221AC742949249200CCCEE5 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		F221AC76294927BE00CCCEE5 /* ImageDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
 		F254DD8C29461B8D0048BD8E /* DiscoverMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscoverMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F254DD8F29461B8D0048BD8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F254DD9129461B8D0048BD8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F254DD9329461B8D0048BD8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F254DD9629461B8D0048BD8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F254DD9829461B8F0048BD8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F254DD9B29461B8F0048BD8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F254DD9D29461B8F0048BD8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,17 +79,211 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A17A9C9AF085DFF165855B /* libPods-DiscoverMovies.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D5885F5BBF9AE81E6742C69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D14EEE2C61F05DA6FD9D86AE /* libPods-DiscoverMovies.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66561EB1BD875CDE1975779A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B31830D2370A0E31B24476D /* Pods-DiscoverMovies.debug.xcconfig */,
+				CC9D3DA6F7DC91992ADD862C /* Pods-DiscoverMovies.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F221AC3429491F0500CCCEE5 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				F254DD9D29461B8F0048BD8E /* Info.plist */,
+				F254DD8F29461B8D0048BD8E /* AppDelegate.swift */,
+				F254DD9129461B8D0048BD8E /* SceneDelegate.swift */,
+				F254DD9829461B8F0048BD8E /* Assets.xcassets */,
+				F254DD9A29461B8F0048BD8E /* LaunchScreen.storyboard */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		F221AC35294920A900CCCEE5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC36294920C300CCCEE5 /* Configuration.swift */,
+				F221AC382949214800CCCEE5 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F221AC382949214800CCCEE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC392949215500CCCEE5 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F221AC3B2949216400CCCEE5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC40294921AC00CCCEE5 /* CoreDataManager.swift */,
+				F221AC76294927BE00CCCEE5 /* ImageDownloadManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F221AC3C2949217700CCCEE5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC42294921CA00CCCEE5 /* APICaller.swift */,
+				F221AC44294921D700CCCEE5 /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F221AC3D2949217D00CCCEE5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC512949229300CCCEE5 /* DiscoverMovies.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F221AC3E2949218400CCCEE5 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC542949232D00CCCEE5 /* ViewModels */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		F221AC3F2949218A00CCCEE5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC592949237000CCCEE5 /* Favorites */,
+				F221AC5A2949237700CCCEE5 /* Home */,
+				F221AC5B2949238700CCCEE5 /* MainTabbar */,
+				F221AC5C2949239100CCCEE5 /* Search */,
+				F221AC5D2949239700CCCEE5 /* SearchResult */,
+				F221AC5E294923A300CCCEE5 /* TitlePreview */,
+				F221AC5F294923AA00CCCEE5 /* Upcoming */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F221AC44294921D700CCCEE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC45294921E100CCCEE5 /* Imdb */,
+				F221AC46294921E900CCCEE5 /* Youtube */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F221AC45294921E100CCCEE5 /* Imdb */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC47294921FC00CCCEE5 /* MovieResponseModel.swift */,
+				F221AC492949221000CCCEE5 /* MovieModel.swift */,
+			);
+			path = Imdb;
+			sourceTree = "<group>";
+		};
+		F221AC46294921E900CCCEE5 /* Youtube */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC4B2949222A00CCCEE5 /* YoutubeSearchModel.swift */,
+				F221AC4D2949223D00CCCEE5 /* YoutubeVideoIdModel.swift */,
+				F221AC4F2949224F00CCCEE5 /* YoutubeVideoModel.swift */,
+			);
+			path = Youtube;
+			sourceTree = "<group>";
+		};
+		F221AC542949232D00CCCEE5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC552949234000CCCEE5 /* TitlePreviewViewModel.swift */,
+				F221AC572949234F00CCCEE5 /* TitleViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F221AC592949237000CCCEE5 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC60294923B800CCCEE5 /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		F221AC5A2949237700CCCEE5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC62294923CD00CCCEE5 /* HomeViewController.swift */,
+				F221AC66294923FA00CCCEE5 /* CollectionTableViewCell.swift */,
+				F221AC682949240E00CCCEE5 /* HeroHeaderUIView.swift */,
+				F221AC6A2949241F00CCCEE5 /* TitleImageCollectionViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F221AC5B2949238700CCCEE5 /* MainTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC64294923E900CCCEE5 /* MainTabBarViewController.swift */,
+			);
+			path = MainTabbar;
+			sourceTree = "<group>";
+		};
+		F221AC5C2949239100CCCEE5 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC6C2949243E00CCCEE5 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F221AC5D2949239700CCCEE5 /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC6E2949245500CCCEE5 /* SearchResultViewController.swift */,
+			);
+			path = SearchResult;
+			sourceTree = "<group>";
+		};
+		F221AC5E294923A300CCCEE5 /* TitlePreview */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC702949246900CCCEE5 /* TitlePreviewViewController.swift */,
+			);
+			path = TitlePreview;
+			sourceTree = "<group>";
+		};
+		F221AC5F294923AA00CCCEE5 /* Upcoming */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC722949247C00CCCEE5 /* UpcomingViewController.swift */,
+				F221AC742949249200CCCEE5 /* TitleTableViewCell.swift */,
+			);
+			path = Upcoming;
+			sourceTree = "<group>";
+		};
 		F254DD8329461B8D0048BD8E = {
 			isa = PBXGroup;
 			children = (
 				F254DD8E29461B8D0048BD8E /* DiscoverMovies */,
 				F254DD8D29461B8D0048BD8E /* Products */,
+				66561EB1BD875CDE1975779A /* Pods */,
+				2D5885F5BBF9AE81E6742C69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +298,13 @@
 		F254DD8E29461B8D0048BD8E /* DiscoverMovies */ = {
 			isa = PBXGroup;
 			children = (
-				F254DD8F29461B8D0048BD8E /* AppDelegate.swift */,
-				F254DD9129461B8D0048BD8E /* SceneDelegate.swift */,
-				F254DD9329461B8D0048BD8E /* ViewController.swift */,
-				F254DD9529461B8D0048BD8E /* Main.storyboard */,
-				F254DD9829461B8F0048BD8E /* Assets.xcassets */,
-				F254DD9A29461B8F0048BD8E /* LaunchScreen.storyboard */,
-				F254DD9D29461B8F0048BD8E /* Info.plist */,
+				F221AC3429491F0500CCCEE5 /* Applications */,
+				F221AC35294920A900CCCEE5 /* Common */,
+				F221AC3B2949216400CCCEE5 /* Managers */,
+				F221AC3C2949217700CCCEE5 /* Network */,
+				F221AC3D2949217D00CCCEE5 /* Resources */,
+				F221AC3E2949218400CCCEE5 /* Reusable */,
+				F221AC3F2949218A00CCCEE5 /* Screens */,
 			);
 			path = DiscoverMovies;
 			sourceTree = "<group>";
@@ -74,6 +316,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F254DDA029461B8F0048BD8E /* Build configuration list for PBXNativeTarget "DiscoverMovies" */;
 			buildPhases = (
+				6CA3838C23520753F7179A03 /* [CP] Check Pods Manifest.lock */,
 				F254DD8829461B8D0048BD8E /* Sources */,
 				F254DD8929461B8D0048BD8E /* Frameworks */,
 				F254DD8A29461B8D0048BD8E /* Resources */,
@@ -103,7 +346,7 @@
 				};
 			};
 			buildConfigurationList = F254DD8729461B8D0048BD8E /* Build configuration list for PBXProject "DiscoverMovies" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -127,19 +370,66 @@
 			files = (
 				F254DD9C29461B8F0048BD8E /* LaunchScreen.storyboard in Resources */,
 				F254DD9929461B8F0048BD8E /* Assets.xcassets in Resources */,
-				F254DD9729461B8D0048BD8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CA3838C23520753F7179A03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiscoverMovies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F254DD8829461B8D0048BD8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F254DD9429461B8D0048BD8E /* ViewController.swift in Sources */,
+				F221AC752949249200CCCEE5 /* TitleTableViewCell.swift in Sources */,
+				F221AC732949247C00CCCEE5 /* UpcomingViewController.swift in Sources */,
+				F221AC692949240E00CCCEE5 /* HeroHeaderUIView.swift in Sources */,
+				F221AC4E2949223D00CCCEE5 /* YoutubeVideoIdModel.swift in Sources */,
+				F221AC3A2949215500CCCEE5 /* StringExtensions.swift in Sources */,
+				F221AC712949246900CCCEE5 /* TitlePreviewViewController.swift in Sources */,
+				F221AC48294921FC00CCCEE5 /* MovieResponseModel.swift in Sources */,
+				F221AC65294923E900CCCEE5 /* MainTabBarViewController.swift in Sources */,
+				F221AC43294921CA00CCCEE5 /* APICaller.swift in Sources */,
+				F221AC502949224F00CCCEE5 /* YoutubeVideoModel.swift in Sources */,
+				F221AC532949229300CCCEE5 /* DiscoverMovies.xcdatamodeld in Sources */,
+				F221AC6F2949245500CCCEE5 /* SearchResultViewController.swift in Sources */,
+				F221AC67294923FA00CCCEE5 /* CollectionTableViewCell.swift in Sources */,
+				F221AC37294920C300CCCEE5 /* Configuration.swift in Sources */,
+				F221AC4A2949221000CCCEE5 /* MovieModel.swift in Sources */,
 				F254DD9029461B8D0048BD8E /* AppDelegate.swift in Sources */,
+				F221AC41294921AC00CCCEE5 /* CoreDataManager.swift in Sources */,
+				F221AC6B2949241F00CCCEE5 /* TitleImageCollectionViewCell.swift in Sources */,
+				F221AC562949234000CCCEE5 /* TitlePreviewViewModel.swift in Sources */,
+				F221AC77294927BE00CCCEE5 /* ImageDownloadManager.swift in Sources */,
+				F221AC6D2949243E00CCCEE5 /* SearchViewController.swift in Sources */,
+				F221AC63294923CD00CCCEE5 /* HomeViewController.swift in Sources */,
+				F221AC582949234F00CCCEE5 /* TitleViewModel.swift in Sources */,
+				F221AC4C2949222A00CCCEE5 /* YoutubeSearchModel.swift in Sources */,
+				F221AC61294923B800CCCEE5 /* FavoritesViewController.swift in Sources */,
 				F254DD9229461B8D0048BD8E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +437,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F254DD9529461B8D0048BD8E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F254DD9629461B8D0048BD8E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F254DD9A29461B8F0048BD8E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,17 +564,22 @@
 		};
 		F254DDA129461B8F0048BD8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B31830D2370A0E31B24476D /* Pods-DiscoverMovies.debug.xcconfig */;
 			buildSettings = {
+				API_AUTH_KEY_IMDB = fd2b04342048fa2d5f728561866ad52a;
+				API_AUTH_KEY_YOUTUBE = "AIzaSyCRwQEEAjI8iKf-iRAA_h6eAlzr1fSm5JU";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_IMDB_IMAGE_URL = "https://image.tmdb.org/t/p";
+				BASE_IMDB_URL = "https://api.themoviedb.org";
+				BASE_YOUTUBE_URL = "https://youtube.googleapis.com/youtube/v3/search?";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R7N4XN9BQ5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DiscoverMovies/Info.plist;
+				INFOPLIST_FILE = DiscoverMovies/Applications/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,17 +597,22 @@
 		};
 		F254DDA229461B8F0048BD8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC9D3DA6F7DC91992ADD862C /* Pods-DiscoverMovies.release.xcconfig */;
 			buildSettings = {
+				API_AUTH_KEY_IMDB = fd2b04342048fa2d5f728561866ad52a;
+				API_AUTH_KEY_YOUTUBE = "AIzaSyCRwQEEAjI8iKf-iRAA_h6eAlzr1fSm5JU";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_IMDB_IMAGE_URL = "https://image.tmdb.org/t/p";
+				BASE_IMDB_URL = "https://api.themoviedb.org";
+				BASE_YOUTUBE_URL = "https://youtube.googleapis.com/youtube/v3/search?";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R7N4XN9BQ5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DiscoverMovies/Info.plist;
+				INFOPLIST_FILE = DiscoverMovies/Applications/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +650,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F221AC512949229300CCCEE5 /* DiscoverMovies.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F221AC522949229300CCCEE5 /* DiscoverMovies.xcdatamodel */,
+			);
+			currentVersion = F221AC522949229300CCCEE5 /* DiscoverMovies.xcdatamodel */;
+			path = DiscoverMovies.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F254DD8429461B8D0048BD8E /* Project object */;
 }
