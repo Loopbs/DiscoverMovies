@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5A17A9C9AF085DFF165855B /* libPods-DiscoverMovies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D14EEE2C61F05DA6FD9D86AE /* libPods-DiscoverMovies.a */; };
 		F254DD9029461B8D0048BD8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254DD8F29461B8D0048BD8E /* AppDelegate.swift */; };
 		F254DD9229461B8D0048BD8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254DD9129461B8D0048BD8E /* SceneDelegate.swift */; };
 		F254DD9429461B8D0048BD8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254DD9329461B8D0048BD8E /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B31830D2370A0E31B24476D /* Pods-DiscoverMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscoverMovies.debug.xcconfig"; path = "Target Support Files/Pods-DiscoverMovies/Pods-DiscoverMovies.debug.xcconfig"; sourceTree = "<group>"; };
+		CC9D3DA6F7DC91992ADD862C /* Pods-DiscoverMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscoverMovies.release.xcconfig"; path = "Target Support Files/Pods-DiscoverMovies/Pods-DiscoverMovies.release.xcconfig"; sourceTree = "<group>"; };
+		D14EEE2C61F05DA6FD9D86AE /* libPods-DiscoverMovies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DiscoverMovies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F254DD8C29461B8D0048BD8E /* DiscoverMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscoverMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F254DD8F29461B8D0048BD8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F254DD9129461B8D0048BD8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A17A9C9AF085DFF165855B /* libPods-DiscoverMovies.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D5885F5BBF9AE81E6742C69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D14EEE2C61F05DA6FD9D86AE /* libPods-DiscoverMovies.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66561EB1BD875CDE1975779A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B31830D2370A0E31B24476D /* Pods-DiscoverMovies.debug.xcconfig */,
+				CC9D3DA6F7DC91992ADD862C /* Pods-DiscoverMovies.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F254DD8329461B8D0048BD8E = {
 			isa = PBXGroup;
 			children = (
 				F254DD8E29461B8D0048BD8E /* DiscoverMovies */,
 				F254DD8D29461B8D0048BD8E /* Products */,
+				66561EB1BD875CDE1975779A /* Pods */,
+				2D5885F5BBF9AE81E6742C69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F254DDA029461B8F0048BD8E /* Build configuration list for PBXNativeTarget "DiscoverMovies" */;
 			buildPhases = (
+				6CA3838C23520753F7179A03 /* [CP] Check Pods Manifest.lock */,
 				F254DD8829461B8D0048BD8E /* Sources */,
 				F254DD8929461B8D0048BD8E /* Frameworks */,
 				F254DD8A29461B8D0048BD8E /* Resources */,
@@ -103,7 +128,7 @@
 				};
 			};
 			buildConfigurationList = F254DD8729461B8D0048BD8E /* Build configuration list for PBXProject "DiscoverMovies" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CA3838C23520753F7179A03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiscoverMovies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F254DD8829461B8D0048BD8E /* Sources */ = {
@@ -282,6 +332,7 @@
 		};
 		F254DDA129461B8F0048BD8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B31830D2370A0E31B24476D /* Pods-DiscoverMovies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +346,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +362,7 @@
 		};
 		F254DDA229461B8F0048BD8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC9D3DA6F7DC91992ADD862C /* Pods-DiscoverMovies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +376,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
