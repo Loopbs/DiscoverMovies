@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C5A17A9C9AF085DFF165855B /* libPods-DiscoverMovies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D14EEE2C61F05DA6FD9D86AE /* libPods-DiscoverMovies.a */; };
+		F221AC37294920C300CCCEE5 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221AC36294920C300CCCEE5 /* Configuration.swift */; };
 		F254DD9029461B8D0048BD8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254DD8F29461B8D0048BD8E /* AppDelegate.swift */; };
 		F254DD9229461B8D0048BD8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254DD9129461B8D0048BD8E /* SceneDelegate.swift */; };
 		F254DD9929461B8F0048BD8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F254DD9829461B8F0048BD8E /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 		5B31830D2370A0E31B24476D /* Pods-DiscoverMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscoverMovies.debug.xcconfig"; path = "Target Support Files/Pods-DiscoverMovies/Pods-DiscoverMovies.debug.xcconfig"; sourceTree = "<group>"; };
 		CC9D3DA6F7DC91992ADD862C /* Pods-DiscoverMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscoverMovies.release.xcconfig"; path = "Target Support Files/Pods-DiscoverMovies/Pods-DiscoverMovies.release.xcconfig"; sourceTree = "<group>"; };
 		D14EEE2C61F05DA6FD9D86AE /* libPods-DiscoverMovies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DiscoverMovies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F221AC36294920C300CCCEE5 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		F254DD8C29461B8D0048BD8E /* DiscoverMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscoverMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F254DD8F29461B8D0048BD8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F254DD9129461B8D0048BD8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,14 @@
 			path = Applications;
 			sourceTree = "<group>";
 		};
+		F221AC35294920A900CCCEE5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F221AC36294920C300CCCEE5 /* Configuration.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		F254DD8329461B8D0048BD8E = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				F221AC3429491F0500CCCEE5 /* Applications */,
+				F221AC35294920A900CCCEE5 /* Common */,
 			);
 			path = DiscoverMovies;
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F221AC37294920C300CCCEE5 /* Configuration.swift in Sources */,
 				F254DD9029461B8D0048BD8E /* AppDelegate.swift in Sources */,
 				F254DD9229461B8D0048BD8E /* SceneDelegate.swift in Sources */,
 			);
@@ -326,8 +338,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B31830D2370A0E31B24476D /* Pods-DiscoverMovies.debug.xcconfig */;
 			buildSettings = {
+				API_AUTH_KEY_IMDB = fd2b04342048fa2d5f728561866ad52a;
+				API_AUTH_KEY_YOUTUBE = "AIzaSyCRwQEEAjI8iKf-iRAA_h6eAlzr1fSm5JU";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_IMDB_IMAGE_URL = "https://image.tmdb.org/t/p";
+				BASE_IMDB_URL = "https://api.themoviedb.org";
+				BASE_YOUTUBE_URL = "https://youtube.googleapis.com/youtube/v3/search?";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R7N4XN9BQ5;
@@ -356,8 +373,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC9D3DA6F7DC91992ADD862C /* Pods-DiscoverMovies.release.xcconfig */;
 			buildSettings = {
+				API_AUTH_KEY_IMDB = fd2b04342048fa2d5f728561866ad52a;
+				API_AUTH_KEY_YOUTUBE = "AIzaSyCRwQEEAjI8iKf-iRAA_h6eAlzr1fSm5JU";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_IMDB_IMAGE_URL = "https://image.tmdb.org/t/p";
+				BASE_IMDB_URL = "https://api.themoviedb.org";
+				BASE_YOUTUBE_URL = "https://youtube.googleapis.com/youtube/v3/search?";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R7N4XN9BQ5;
