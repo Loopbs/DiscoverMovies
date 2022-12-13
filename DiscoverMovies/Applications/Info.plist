@@ -15,11 +15,28 @@
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
 				</dict>
 			</array>
 		</dict>
+	</dict>
+	<key>Configurations</key>
+	<dict>
+		<key>BASE_IMDB_URL</key>
+		<string>$BASE_IMDB_URL</string>
+		<key>BASE_YOUTUBE_URL</key>
+		<string>$BASE_YOUTUBE_URL</string>
+		<key>BASE_IMDB_IMAGE_URL</key>
+		<string>$BASE_IMDB_IMAGE_URL</string>
+		<key>API_AUTH_KEY_IMDB</key>
+		<string>$API_AUTH_KEY_IMDB</string>
+		<key>API_AUTH_KEY_YOUTUBE</key>
+		<string>$API_AUTH_KEY_YOUTUBE</string>
+		<key>API_TIMEOUT_INTERVAL_FOR_REQUEST</key>
+		<string>$API_TIMEOUT_INTERVAL_FOR_REQUEST</string>
+		<key>BUNDLE_IDENTIFIER</key>
+		<string>$BUNDLE_IDENTIFIER</string>
+		<key>ROOT_STORYBOARD_NAME</key>
+		<string>$ROOT_STORYBOARD_NAME</string>
 	</dict>
 </dict>
 </plist>
