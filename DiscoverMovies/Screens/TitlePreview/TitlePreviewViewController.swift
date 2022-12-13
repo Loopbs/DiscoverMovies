@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import SnapKit
 
 class TitlePreviewViewController: UIViewController {
 
@@ -57,34 +58,28 @@ class TitlePreviewViewController: UIViewController {
 
     func configureContraints() {
 
-        let webViewConstraints = [
-            webView.topAnchor.constraint(equalTo: view.topAnchor,constant: 50),
-            webView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            webView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            webView.heightAnchor.constraint(equalToConstant: 300)
-        ]
+        webView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(50)
+            make.leading.trailing.equalToSuperview()
+            make.height.equalTo(300)
+        }
 
-        let titleLabelConstratints = [
-            titleLabel.topAnchor.constraint(equalTo: webView.bottomAnchor, constant: 20),
-            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
-        ]
+        titleLabel.snp.makeConstraints { make in
+            make.top.equalTo(webView.snp.bottom).offset(20)
+            make.leading.equalToSuperview().offset(20)
+        }
 
-        let overviewLabelConstraints = [
-            overviewLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor,constant: 15),
-            overviewLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            overviewLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ]
+        overviewLabel.snp.makeConstraints { make in
+            make.top.equalTo(titleLabel.snp.bottom).offset(15)
+            make.leading.equalToSuperview().offset(20)
+            make.trailing.equalToSuperview()
+        }
 
-        let favoriteButtonConstraints = [
-            favoriteButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            favoriteButton.topAnchor.constraint(equalTo: overviewLabel.bottomAnchor, constant: 25),
-            favoriteButton.widthAnchor.constraint(equalToConstant: 150)
-        ]
-
-        NSLayoutConstraint.activate(webViewConstraints)
-        NSLayoutConstraint.activate(titleLabelConstratints)
-        NSLayoutConstraint.activate(overviewLabelConstraints)
-        NSLayoutConstraint.activate(favoriteButtonConstraints)
+        favoriteButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(overviewLabel.snp.bottom).offset(25)
+            make.width.equalTo(150)
+        }
     }
 
     func configure(with model : TitlePreviewViewModel) {
